@@ -11,6 +11,7 @@ const plantImages = {
   palms: "/unnamed (12).webp",
   flowering: "/unnamed (2).webp",
   indoor: "/unnamed (3).webp",
+  fruit: "/hylocereus undatus- dragon fruit.JPG",
 };
 
 export default function Home() {
@@ -134,6 +135,11 @@ export default function Home() {
                 "Indoor & Ornamental",
                 plantImages.indoor,
                 "Easy-to-style greens for homes, offices and interiors.",
+              ],
+              [
+                "Fruit Plants",
+                plantImages.fruit,
+                "Freshness that grows into flavour.",
               ],
             ].map(([title, image, text]) => (
               <article

@@ -599,7 +599,6 @@ button,input,textarea{font:inherit}
 .contact-form input:focus,.contact-form textarea:focus{border-color:var(--green-500);box-shadow:0 0 0 4px rgba(73,169,66,.1)}
 .contact-form textarea{resize:vertical}
 .contact-form .btn{margin-top:7px}
-.form-note{display:block;color:#7a897f;font-size:11px;line-height:1.6;margin-top:15px}
 
 .footer{background:#061e12;color:#d7e5da;padding-top:55px}
 .footer-inner{display:flex;justify-content:space-between;gap:30px;padding-bottom:45px}

@@ -50,7 +50,6 @@ export default function Contact() {
             <label>Email<input type="email" name="email" placeholder="Email address" /></label>
             <label>What plants are you interested in?<textarea name="message" rows="5" placeholder="Tell us about your space or plant requirement..." /></label>
             <button className="btn btn-primary" type="submit">{sent ? "Enquiry noted ✓" : "Send enquiry"} <FiSend /></button>
-            <small className="form-note">This frontend demo currently shows a success state. Connect the form to your preferred email/API service for real submissions.</small>
           </form>
         </div>
       </section>
