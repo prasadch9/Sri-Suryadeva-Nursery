@@ -26,7 +26,7 @@ export default function Contact() {
           <div className="contact-details">
             <div className="contact-card">
               <FiMapPin />
-              <div><span>Visit us</span><b>Kadiyam, Andhra Pradesh, India</b><p>Add the complete nursery address here.</p></div>
+              <div><span>Visit us</span><b>Kadiyam, Andhra Pradesh, India</b></div>
             </div>
             <div className="contact-card">
               <FiPhone />
