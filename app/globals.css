@@ -1111,3 +1111,457 @@ button,input,textarea{font:inherit}
     line-height: 1.7;
   }
 }
+
+/* ================================
+   PLANTS PAGE
+================================ */
+
+.plants-hero {
+  padding: 120px 0 80px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(80, 140, 80, 0.12), transparent 35%),
+    #f5f8f1;
+}
+
+.plants-hero h1 {
+  max-width: 850px;
+  margin: 10px 0 20px;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.plants-hero h1 span {
+  color: #4d8b58;
+}
+
+.plants-hero .lead {
+  max-width: 650px;
+}
+
+
+/* ================================
+   CATEGORY BUTTONS
+================================ */
+
+.plant-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 70px;
+}
+
+.category-btn {
+  border: 1px solid rgba(24, 61, 39, 0.15);
+  background: #fff;
+  color: #183d27;
+  padding: 13px 21px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #edf5e9;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: #183d27;
+  color: #fff;
+  border-color: #183d27;
+}
+
+
+/* ================================
+   PLANT HEADING
+================================ */
+
+.plants-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.plants-heading h2 {
+  margin: 5px 0 0;
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1;
+}
+
+.plant-count {
+  font-size: 13px;
+  font-weight: 800;
+  color: #657168;
+  white-space: nowrap;
+}
+
+
+/* ================================
+   PLANT GRID
+================================ */
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.plant-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(24, 61, 39, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(20, 70, 40, 0.07);
+  transition: 0.4s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(20, 70, 40, 0.13);
+}
+
+
+/* IMAGE */
+
+.plant-image {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  background: #edf2e9;
+}
+
+.plant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.plant-card:hover .plant-image img {
+  transform: scale(1.07);
+}
+
+.plant-number {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #183d27;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* CARD BODY */
+
+.plant-card-body {
+  padding: 22px;
+}
+
+.plant-category {
+  margin: 0 0 8px;
+  color: #6b806d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.plant-card h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+
+/* DETAILS BUTTON */
+
+.details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #183d27;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.details-btn svg {
+  transition: 0.3s ease;
+}
+
+.details-btn:hover svg {
+  transform: translate(4px, -4px);
+}
+
+
+/* ================================
+   CONTACT MODAL
+================================ */
+
+.plant-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgba(8, 25, 15, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.plant-contact-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  width: min(850px, 100%);
+  overflow: hidden;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.25);
+  animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 5;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #183d27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.modal-image {
+  min-height: 460px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-content {
+  padding: 45px;
+}
+
+.modal-content h2 {
+  margin: 5px 0 15px;
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1;
+}
+
+.modal-content > p:not(.kicker) {
+  color: #626c64;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-details {
+  display: grid;
+  gap: 13px;
+  margin-bottom: 28px;
+}
+
+.contact-details a,
+.contact-details > div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #183d27;
+  text-decoration: none;
+}
+
+.contact-details svg {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+}
+
+.contact-details span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact-details small {
+  color: #778178;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.modal-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+  .plant-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .plant-image {
+    height: 240px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .plants-hero {
+    padding: 90px 0 60px;
+  }
+
+  .plants-hero h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .plant-categories {
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+
+  .category-btn {
+    padding: 11px 16px;
+    font-size: 12px;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+  }
+
+  .plant-image {
+    height: 190px;
+  }
+
+  .plant-card {
+    border-radius: 18px;
+  }
+
+  .plant-card-body {
+    padding: 16px;
+  }
+
+  .plant-card h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .plant-category {
+    font-size: 9px;
+  }
+
+  .plant-count {
+    font-size: 11px;
+  }
+
+  .plants-heading {
+    margin-bottom: 22px;
+  }
+
+  /* MODAL */
+
+  .plant-modal {
+    padding: 15px;
+  }
+
+  .plant-contact-box {
+    grid-template-columns: 1fr;
+    max-height: 92vh;
+    overflow-y: auto;
+    border-radius: 22px;
+  }
+
+  .modal-image {
+    height: 230px;
+    min-height: 0;
+  }
+
+  .modal-content {
+    padding: 28px 23px 30px;
+  }
+
+  .modal-content h2 {
+    font-size: 32px;
+  }
+
+  .modal-close {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 420px) {
+
+  .plant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plant-image {
+    height: 250px;
+  }
+
+  .plants-heading h2 {
+    font-size: 30px;
+  }
+}
