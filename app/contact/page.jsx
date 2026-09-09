@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
             <div className="contact-card">
               <FiPhone />
-              <div><span>Call / WhatsApp</span><b>Add nursery phone number</b><p>Replace this text with your business number.</p></div>
+              <div><span>Call / WhatsApp</span><b>9948574718</b></div>
             </div>
             <div className="contact-card">
               <FiMail />

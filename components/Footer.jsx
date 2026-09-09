@@ -76,8 +76,8 @@ export default function Footer() {
 
             <div>
               <FiPhone />
-              <a href="tel:+9194931 12522">
-                +91 94931 12522
+              <a href="tel:+919948574718">
+                +91 99485 74718
               </a>
             </div>
 

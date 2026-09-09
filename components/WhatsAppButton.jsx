@@ -1,6 +1,6 @@
 export default function WhatsAppButton() {
   // Replace the placeholder number with the nursery's real WhatsApp number.
-  const whatsappNumber = "919493112522";
+  const whatsappNumber = "919948574718";
   const message = encodeURIComponent(
     "Hello Sri Suryadeva Nursery, I would like to know about your plants."
   );

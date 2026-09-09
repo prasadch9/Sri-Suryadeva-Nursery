@@ -311,11 +311,11 @@ export default function OurPlants() {
 
               <div className="contact-details">
 
-                <a href="tel:+919999999999">
+                <a href="tel:+919948574718">
                   <FiPhone />
                   <span>
                     <small>Call Us</small>
-                    +91 99999 99999
+                    +91 99485 74718
                   </span>
                 </a>
 
