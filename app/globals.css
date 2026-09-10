@@ -2056,3 +2056,29 @@ button,input,textarea{font:inherit}
     font-size: 22px;
   }
 }
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1f5d35;
+  border: 1px solid rgba(31, 93, 53, 0.15);
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: #1f5d35;
+  color: #ffffff;
+}

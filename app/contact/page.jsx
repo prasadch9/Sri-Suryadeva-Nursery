@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 import {
   FiClock,
   FiMail,
@@ -11,6 +12,8 @@ import {
   FiArrowUpRight,
   FiCheck,
 } from "react-icons/fi";
+
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -41,13 +44,11 @@ export default function Contact() {
         </div>
       </section>
 
-
       {/* =========================================
           CONTACT DETAILS + FORM
       ========================================= */}
       <section className="section contact-main-section">
         <div className="container">
-
           <div className="contact-grid">
 
             {/* LEFT - CONTACT DETAILS */}
@@ -68,7 +69,6 @@ export default function Contact() {
                 </div>
               </div>
 
-
               {/* Phone */}
               <div className="contact-card">
                 <FiPhone />
@@ -86,7 +86,6 @@ export default function Contact() {
                 </div>
               </div>
 
-
               {/* Email */}
               <div className="contact-card">
                 <FiMail />
@@ -101,7 +100,6 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
-
 
               {/* Opening Hours */}
               <div className="contact-card">
@@ -118,6 +116,26 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Social Media */}
+              <div className="social-links">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram />
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF />
+                </a>
+              </div>
 
               {/* Help Box */}
               <div className="contact-mini-box">
@@ -132,16 +150,13 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
-
             </div>
-
 
             {/* RIGHT - ENQUIRY FORM */}
             <form
               className="contact-form"
               onSubmit={handleSubmit}
             >
-
               <p className="kicker">Send an enquiry</p>
 
               <h2>
@@ -153,7 +168,6 @@ export default function Contact() {
                 Send us your requirements and we’ll get back to you.
               </p>
 
-
               <label>
                 Name
 
@@ -163,7 +177,6 @@ export default function Contact() {
                   placeholder="Your name"
                 />
               </label>
-
 
               <label>
                 Phone
@@ -175,7 +188,6 @@ export default function Contact() {
                 />
               </label>
 
-
               <label>
                 Email
 
@@ -185,7 +197,6 @@ export default function Contact() {
                   placeholder="Email address"
                 />
               </label>
-
 
               <label>
                 What plants are you interested in?
@@ -197,7 +208,6 @@ export default function Contact() {
                 />
               </label>
 
-
               <button
                 className="btn btn-primary"
                 type="submit"
@@ -206,26 +216,20 @@ export default function Contact() {
 
                 <FiSend />
               </button>
-
             </form>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =========================================
           WHY VISIT US
       ========================================= */}
       <section className="section contact-story-section">
         <div className="container">
-
           <div className="contact-story-grid">
 
             {/* IMAGE */}
             <div className="contact-story-image">
-
               <img
                 src="/unnamed (9).webp"
                 alt="Sri Suryadeva Nursery plants"
@@ -240,13 +244,10 @@ export default function Contact() {
                   with nature
                 </p>
               </div>
-
             </div>
-
 
             {/* CONTENT */}
             <div className="contact-story-content">
-
               <p className="kicker">
                 Why visit us
               </p>
@@ -271,10 +272,8 @@ export default function Contact() {
                 nursery is here to help you choose the right plants.
               </p>
 
-
               {/* BENEFITS */}
               <div className="contact-benefits">
-
                 <div>
                   <FiCheck />
                   <span>Wide variety of plants</span>
@@ -294,9 +293,7 @@ export default function Contact() {
                   <FiCheck />
                   <span>Quality greenery</span>
                 </div>
-
               </div>
-
 
               <Link
                 href="/our-plants"
@@ -305,26 +302,20 @@ export default function Contact() {
                 Explore Our Plants
                 <FiArrowUpRight />
               </Link>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =========================================
           VISIT OUR NURSERY
       ========================================= */}
       <section className="section visit-section">
         <div className="container">
-
           <div className="visit-grid">
 
             {/* IMAGE */}
             <div className="visit-image">
-
               <img
                 src="/unnamed (23).webp"
                 alt="Sri Suryadeva Nursery Kadiyam"
@@ -334,13 +325,10 @@ export default function Contact() {
                 <span>SRI SURYADEVA</span>
                 <b>NURSERY</b>
               </div>
-
             </div>
-
 
             {/* CONTENT */}
             <div className="visit-content">
-
               <p className="kicker">
                 Visit our nursery
               </p>
@@ -364,10 +352,8 @@ export default function Contact() {
                 space.
               </p>
 
-
               {/* POINTS */}
               <div className="visit-points">
-
                 <div>
                   <FiCheck />
                   <span>Wide collection of plants</span>
@@ -387,13 +373,10 @@ export default function Contact() {
                   <FiCheck />
                   <span>Friendly plant guidance</span>
                 </div>
-
               </div>
-
 
               {/* ADDRESS */}
               <div className="visit-address">
-
                 <FiMapPin />
 
                 <div>
@@ -407,9 +390,7 @@ export default function Contact() {
                     Kadiyam, Andhra Pradesh, India
                   </span>
                 </div>
-
               </div>
-
 
               {/* PHONE BUTTON */}
               <a
@@ -419,25 +400,19 @@ export default function Contact() {
                 Call / WhatsApp
                 <FiPhone />
               </a>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =========================================
           FINAL CTA
       ========================================= */}
       <section className="section contact-cta-section">
         <div className="container">
-
           <div className="contact-cta">
 
             <div>
-
               <p className="kicker">
                 Let’s grow together
               </p>
@@ -452,12 +427,9 @@ export default function Contact() {
                 Have questions about plants, pricing or availability?
                 We would love to hear from you.
               </p>
-
             </div>
 
-
             <div className="cta-actions">
-
               <a
                 href="tel:+919948574718"
                 className="btn btn-primary"
@@ -466,7 +438,6 @@ export default function Contact() {
                 <FiPhone />
               </a>
 
-
               <Link
                 href="/our-plants"
                 className="btn btn-outline"
@@ -474,11 +445,9 @@ export default function Contact() {
                 View Plants
                 <FiArrowUpRight />
               </Link>
-
             </div>
 
           </div>
-
         </div>
       </section>
 
