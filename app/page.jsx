@@ -75,7 +75,7 @@ export default function Home() {
           <div className="hero-visual">
             <div className="plant-card main-plant-card">
               <img
-                src="/zam.webp"
+                
                 alt="Sri Suryadeva Nursery plants"
               />
 

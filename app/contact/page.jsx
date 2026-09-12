@@ -432,7 +432,7 @@ export default function Contact() {
             <div className="cta-actions">
               <a
                 href="tel:+919948574718"
-                className="btn btn-primary"
+                className="btn btn-outline"
               >
                 Call Us
                 <FiPhone />
