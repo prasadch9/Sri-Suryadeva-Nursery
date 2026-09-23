@@ -18,10 +18,17 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 export default function Contact() {
   const [sent, setSent] = useState(false);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setSent(true);
-  }
+  
+function handleSubmit(e) {
+  e.preventDefault();
+
+  setSent(true);
+
+  // Clear all form values after submit
+  e.target.reset();
+}
+
+
 
   return (
     <div className="page-shell">
@@ -70,15 +77,30 @@ export default function Contact() {
               </div>
 
               {/* Phone */}
-              <div className="contact-card">
-                <FiPhone />
+              <div className="contact-card phone-card">
+                <FiPhone className="phone-main-icon" />
 
                 <div>
                   <span>Call / WhatsApp</span>
 
-                  <a href="tel:+919948574718">
-                    <b>9948574718</b>
-                  </a>
+                  <div className="phone-list">
+
+                    <a href="tel:+919948574718">
+                      <FiPhone />
+                      <span>+91 99485 74718</span>
+                    </a>
+
+                    <a href="tel:+919395353377">
+                      <FiPhone />
+                      <span>+91 93953 53377</span>
+                    </a>
+
+                    <a href="tel:+919948574718">
+                      <FiPhone />
+                      <span>+91 99485 74718</span>
+                    </a>
+
+                  </div>
 
                   <p>
                     Call us for plant availability, pricing and enquiries.
@@ -93,7 +115,7 @@ export default function Contact() {
                 <div>
                   <span>Email</span>
 
-                  <b>Add business email</b>
+                  <b>srisuryadevanursery@gmail.com</b>
 
                   <p>
                     Send us your plant requirements and enquiries.
@@ -128,7 +150,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1FSXgR7ded/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"

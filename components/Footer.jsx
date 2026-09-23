@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
               <img
-                src="/logoo.jpg"
+                src="/3fcb0d3a-8329-4270-9257-8e33cb188e40.jpg"
                 alt="Sri Suryadeva Nursery"
               />
             </Link>
@@ -33,9 +33,14 @@ export default function Footer() {
                 <FiInstagram />
               </a>
 
-              <a href="#" aria-label="Facebook">
-                <FiFacebook />
-              </a>
+             <a
+  href="https://www.facebook.com/share/1FSXgR7ded/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Facebook"
+>
+  <FiFacebook />
+</a>
             </div>
           </div>
 
@@ -65,7 +70,8 @@ export default function Footer() {
           <div className="footer-column footer-contact">
             <h3>Visit Our Nursery</h3>
 
-            <div>
+            {/* Location */}
+            <div className="footer-contact-item">
               <FiMapPin />
               <span>
                 Kadiyam, Rajahmundry,
@@ -74,17 +80,35 @@ export default function Footer() {
               </span>
             </div>
 
-            <div>
+            {/* Phone 1 */}
+            <div className="footer-contact-item">
               <FiPhone />
               <a href="tel:+919948574718">
                 +91 99485 74718
               </a>
             </div>
 
-            <div>
+            {/* Phone 2 */}
+            <div className="footer-contact-item">
+              <FiPhone />
+              <a href="tel:+919395353377">
+                +91 93953 53377
+              </a>
+            </div>
+
+            {/* Phone 3 */}
+            <div className="footer-contact-item">
+              <FiPhone />
+              <a href="tel:+919948574718">
+                +91 99485 74718
+              </a>
+            </div>
+
+            {/* Email */}
+            <div className="footer-contact-item">
               <FiMail />
-              <a href="mailto:info@srisuryadevanursery.com">
-                info@srisuryadevanursery.com
+              <a href="mailto:srisuryadevanursery@gmail.com">
+                srisuryadevanursery@gmail.com
               </a>
             </div>
           </div>
@@ -126,3 +150,4 @@ export default function Footer() {
     </footer>
   );
 }
+

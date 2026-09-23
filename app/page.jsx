@@ -17,6 +17,13 @@ const plantImages = {
 export default function Home() {
   return (
     <>
+                   {/* Hero Image Container */}
+  <div className="hero-top-image">
+    <img
+      src="/home image logo.jpg"
+      alt="Sri Suryadeva Nursery"
+    />
+  </div>
       {/* =========================
           HERO SECTION
       ========================= */}
@@ -26,10 +33,7 @@ export default function Home() {
 
         <div className="container hero-grid">
           <div className="hero-copy">
-            <div className="eyebrow">
-              <FiFeather /> Rooted in nature · Kadiyam
-            </div>
-
+    
             <h1>
               Bring <span>nature</span> home.
             </h1>

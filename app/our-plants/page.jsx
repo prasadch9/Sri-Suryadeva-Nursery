@@ -311,19 +311,34 @@ export default function OurPlants() {
 
               <div className="contact-details">
 
-                <a href="tel:+919948574718">
-                  <FiPhone />
-                  <span>
-                    <small>Call Us</small>
-                    +91 99485 74718
-                  </span>
-                </a>
+                 <div className="footer-contact-item">
+              <FiPhone />
+              <a href="tel:+919948574718">
+                +91 99485 74718
+              </a>
+            </div>
 
-                <a href="mailto:info@srisuryadevanursery.com">
+            {/* Phone 2 */}
+            <div className="footer-contact-item">
+              <FiPhone />
+              <a href="tel:+919395353377">
+                +91 93953 53377
+              </a>
+            </div>
+
+            {/* Phone 3 */}
+            <div className="footer-contact-item">
+              <FiPhone />
+              <a href="tel:+919948574718">
+                +91 99485 74718
+              </a>
+            </div>
+
+                <a href="srisuryadevanursery@gmail.com">
                   <FiMail />
                   <span>
                     <small>Email</small>
-                    info@srisuryadevanursery.com
+                    srisuryadevanursery@gmail.com
                   </span>
                 </a>
 
