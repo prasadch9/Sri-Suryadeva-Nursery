@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container nav-inner">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
-          <img src="/logoo.jpg" alt="Sri Suryadeva Nursery logo" />
+          <img src="/main logo.jpg" alt="Sri Suryadeva Nursery logo" />
         </Link>
 
         <button className="menu-btn" aria-label="Toggle menu" onClick={() => setOpen(!open)}>

@@ -8,9 +8,8 @@ export const metadata = {
   description:
     "Sri Suryadeva Nursery, Kadiyam - Quality plants, palms, flowering plants and ornamental greens.",
   icons: {
-    icon: "/logoo.jpg",
-    shortcut: "/logoo.jpg",
-    apple: "/logoo.jpg",
+    icon: "/main logo.jpg",
+    shortcut: "/main logo.jpg",
   },
 };
 
