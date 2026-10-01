@@ -39,6 +39,14 @@ button,input,textarea{font:inherit}
   justify-content:space-between;
 }
 
+.nav-links a.active {
+  color: #2e7d32;
+  font-weight: 700;
+  background: #e8f5e9;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
 .brand{
   display:flex;
   align-items:center;

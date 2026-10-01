@@ -17,7 +17,7 @@ const plantImages = {
 export default function Home() {
   return (
     <>
-                   {/* Hero Image Container */}
+           {/* Hero Image Container */}
   <div className="hero-top-image">
     <img
       src="/home image logo.jpg"

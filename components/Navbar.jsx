@@ -1,7 +1,8 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const links = [
@@ -14,6 +15,7 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="navbar">
@@ -27,11 +29,21 @@ export default function Navbar() {
         </button>
 
         <nav className={`nav-links ${open ? "show" : ""}`}>
-          {links.map(([href, label]) => (
-            <Link key={href} href={href} onClick={() => setOpen(false)}>
-              {label}
-            </Link>
-          ))}
+          {links.map(([href, label]) => {
+            const active = pathname === href;
+
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={active ? "active" : ""}
+                onClick={() => setOpen(false)}
+              >
+                {label}
+              </Link>
+            );
+          })}
+
           <Link href="/contact" className="nav-cta" onClick={() => setOpen(false)}>
             Visit Nursery
           </Link>
